@@ -1,0 +1,34 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    min-width: 100px;
+    background-color: aqua;
+    padding: 20px 30px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+#play {
+    padding: 10px 30px;
+    font-size: 20px;
+    background-color: chocolate;
+    color: white;
+    border: none;
+}
+
+h2 {
+    text-align: center;
+    margin: 20px 0px;
+    font-size: 30px;
+}
+
+#grid {
+    height: 1200px;
+    width: 1200px;
+    margin: 0px auto;
+    background-color: pink;
+}
