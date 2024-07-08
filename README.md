@@ -22,3 +22,20 @@ Ad esempio:
 Di cosa ho bisogno per generare i numeri?
 Proviamo sempre prima con dei console.log() per capire se stiamo ricevendo i dati giusti.
 Le validazioni e i controlli possiamo farli anche in un secondo momento.
+
+
+
+<!--------------------
+    PSEUDO-CODICE
+--------------------->
+1. Clicco sul pulsante per mostrare la griglia.
+2. Preventivamente svuoto il tag predisposto al contenimento della griglia da tutti gli elementi interni.
+3. Devo creare la griglia:
+    3.1 Eseguo un for da 1 a 100.
+    3.2 All'interno del for, creo un elemento casella.
+    3.3 Stilizzo la casella.
+    3.4 Inserisco il testo (numero) all'interno della casella.
+    3.5 Aggiungo un listener per l'evento click alla casella.
+        3.5.1 Al click della casella, cambia colore.
+        3.5.2 Mostro in console il numero della casella cliccata.
+    3.6 Appendo la casella nel contenitore della griglia.
