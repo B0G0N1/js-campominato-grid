@@ -32,3 +32,9 @@ h2 {
     margin: 0px auto;
     background-color: pink;
 }
+
+.square {
+    width: calc(1200px / 10);
+    height: calc(1200px / 10);
+    border: 1px solid white;
+}
