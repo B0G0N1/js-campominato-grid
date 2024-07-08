@@ -12,7 +12,7 @@ header {
     justify-content: flex-end;
 }
 
-#play {
+#play-button {
     padding: 10px 30px;
     font-size: 20px;
     background-color: chocolate;
