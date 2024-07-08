@@ -1,15 +1,44 @@
+/* RESET */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+
+/* MAIN CSS */
 header {
-    min-width: 100px;
     background-color: #131138;
     padding: 20px 30px;
     display: flex;
     justify-content: flex-end;
+    min-width: 100px;
+}
+
+h2 {
+    font-size: 35px;
+    text-align: center;
+    margin: 20px 0;
+}
+
+
+/* ELEMENTS CSS */
+.square {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    color: white;
+    background-color: #131138;
+    border: 1px solid white;
+}
+
+#grid {
+    width: 1200px;
+    height: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 #play-button,
@@ -20,30 +49,4 @@ header {
     color: white;
     border: none;
     margin-left: 30px;
-}
-
-h2 {
-    text-align: center;
-    margin: 20px 0px;
-    font-size: 35px;
-}
-
-#grid {
-    height: 1200px;
-    width: 1200px;
-    margin: 0px auto;
-    display: flex;
-    flex-wrap: wrap;
-}
-
-.square {
-    width: calc(1200px / 10);
-    height: calc(1200px / 10);
-    border: 1px solid white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 20px;
-    color: white;
-    background-color: #131138;
 }

@@ -5,38 +5,39 @@ let squareDimension;
 
 playButton.addEventListener('click', function() {
     grid.innerHTML = '';
-    selectDifficulty();
-    createSquare();
+    if (selectDifficulty()) {
+        createSquare();
+    }
 });
 
 function createSquare() {
-    for(let i = 1; i <= squareNumber; i++) {
+    for (let i = 1; i <= squareNumber; i++) {
         const square = document.createElement('div');
         square.classList.add('square');
         square.innerText = i;
-        square.style.width = squareDimension;
-        square.style.height = squareDimension;
+        square.style.width = squareDimension + 'px';
+        square.style.height = squareDimension + 'px';
         grid.appendChild(square);
     }
 }
 
 function selectDifficulty() {
     const difficulty = document.getElementById('game-difficulty').value;
-    switch(parseInt(difficulty)) {
+    switch (parseInt(difficulty)) {
         case 1:
             alert("Difficoltà 1");
             squareNumber = 100;
-            squareDimension = calc(1200 / 10);
+            squareDimension = 1200 / 10;
             break;
         case 2:
             alert("Difficoltà 2");
             squareNumber = 81;
-            squareDimension = calc(1200 / 8);
+            squareDimension = 1200 / 9;
             break;
         case 3:
             alert("Difficoltà 3");
             squareNumber = 49;
-            squareDimension = calc(1200 / 7);
+            squareDimension = 1200 / 7;
             break;
         default:
             alert("Seleziona una difficoltà valida");
