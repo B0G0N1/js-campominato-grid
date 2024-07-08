@@ -6,31 +6,32 @@
 
 header {
     min-width: 100px;
-    background-color: aqua;
+    background-color: #131138;
     padding: 20px 30px;
     display: flex;
     justify-content: flex-end;
 }
 
-#play-button {
+#play-button,
+#game-difficulty {
     padding: 10px 30px;
     font-size: 20px;
     background-color: chocolate;
     color: white;
     border: none;
+    margin-left: 30px;
 }
 
 h2 {
     text-align: center;
     margin: 20px 0px;
-    font-size: 30px;
+    font-size: 35px;
 }
 
 #grid {
     height: 1200px;
     width: 1200px;
     margin: 0px auto;
-    background-color: pink;
     display: flex;
     flex-wrap: wrap;
 }
@@ -38,11 +39,11 @@ h2 {
 .square {
     width: calc(1200px / 10);
     height: calc(1200px / 10);
-    border: 1px solid black;
+    border: 1px solid white;
     display: flex;
     justify-content: center;
     align-items: center;
     font-size: 20px;
-    font-weight: bold;
     color: white;
+    background-color: #131138;
 }
