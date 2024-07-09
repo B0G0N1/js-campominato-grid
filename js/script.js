@@ -15,9 +15,13 @@ function createSquare() {
         const square = document.createElement('div');
         square.classList.add('square');
         square.innerText = i;
+
         square.style.width = squareDimension + 'px';
         square.style.height = squareDimension + 'px';
+
         grid.appendChild(square);
+        
+        square.addEventListener('click', changeColor);
     }
 }
 
@@ -44,4 +48,11 @@ function selectDifficulty() {
             return false;
     }
     return true;
+}
+
+function changeColor() {
+    this.classList.toggle('light-blue');
+
+    const cellNumber = parseInt(this.innerText);
+    console.log(`Hai cliccato sulla cella numero ${cellNumber}`);
 }
